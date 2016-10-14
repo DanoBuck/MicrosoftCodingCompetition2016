@@ -1,0 +1,26 @@
+Order | 3 point(s)
+
+You are a judge at a tournament that has N competitors and in which each participant has played a match against every other competitor. Given the results for each single match, your task is to order the competitors in a row such that the competitor at position i must have won the match with the competitor listed at position i+1, regardless of other competitors or matches. It is noted that no match can result in a tie.
+
+You will be given the results as a matrix with N rows and N columns, consisting only of the characters 'W', 'L' or '-'. 'W' in a row number i and column number j means that competitor number i won the match against competitor number j; 'L' means participant i lost to j; and to indicate that a competitor can't play against themselves, '-' will always be in a row i and column j if and only if i=j.
+Input definition
+
+The first line of the input gives the number of competitors N (8 <= N <= 10). N lines follow; each line contains exactly N characters: line number i represents the match results of competitor number i against all other competitors: 'W' represents win; 'L' represents loss; '-' represents that there was no such match and is only true when i=j.
+Output definition
+
+Your output should consist of one line containing a single-space-separated list of competitor numbers, such that a competitor can only be listed in position i if that participant defeated the competitor listed in position i+1.
+
+Note: It is guaranteed that at least one solution will exist for each input you will be given. If there are multiple valid ordered lists, output the lexicographically smallest one. For example, if the valid solutions are '2 3 1' and '3 1 2', you should output '2 3 1'.
+Example input
+
+	3
+
+	-LL
+
+	W-W
+
+	WL-
+
+Example output
+
+	2 3 1

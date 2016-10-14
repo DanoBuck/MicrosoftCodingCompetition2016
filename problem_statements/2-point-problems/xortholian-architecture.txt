@@ -1,0 +1,50 @@
+Xortholian Architecture | 2 point(s)
+
+Disaster in the Xortholian architecture scene!
+
+Xortholians pride themselves on building skyscrapers with a lot of columns in front. While the example below is much smaller to aide with understanding the problem, each skyscraper input file will have horizontal space for 100 to 200 columns, and each space will either be left blank or contain a column. Columns are completely vertical and stretch from the bottom to the top without gaps.
+
+Normally, each skyscraper's plan is stored as a text document consisting of vertical lines (|) and asterisks (*). The vertical lines indicate a place with a column and the asterisks indicate a place without a column. Xortholians are silly and redundantly store a complete rectangle in the text file. Each line in the text file is supposed to be the same.
+
+For example, a thin 12-space skyscraper would look something like:
+
+|***|**|*|*|
+
+If this skyscraper were 7 spaces tall, its file would look like:
+
+|***|**|*|*|
+|***|**|*|*|
+|***|**|*|*|
+|***|**|*|*|
+|***|**|*|*|
+|***|**|*|*|
+|***|**|*|*|
+
+Tragically, disaster has struck and all the schemas have had their endlines erased! Furthermore, the end of each file had between 50 and 200 characters appended, which are vertical lines or asterisks at random.
+
+The example skyscraper above, with 10 characters appended, would look like:
+
+|***|**|*|*||***|**|*|*||***|**|*|*||***|**|*|*||***|**|*|*||***|**|*|*||***|**|*|*|*|**||*|*||
+
+Your goal is to determine what an original file looks like based on its corrupted remains.
+
+Thankfully, our Xortholian colleagues have indicated that column patterns are never a series of repeating sub-patterns.
+Input definition
+
+The input file will contain a single line consisting of between 10,000 and 20,000 characters, all of which are either vertical bars (|) or asterisks (*).
+Output definition
+
+Your output file should contain two lines.
+
+    The first line will contain the height of the skyscraper.
+    The second line will contain a single row of the skyscraper's pattern.
+
+Example input
+
+|***|**|*|*||***|**|*|*||***|**|*|*||***|**|*|*||***|**|*|*||***|**|*|*||***|**|*|*|*|**||*|*||
+
+Example output
+
+7
+
+|***|**|*|*|
