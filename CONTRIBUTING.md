@@ -12,7 +12,7 @@ Each solution should be named [PROBLEM NAME]_[YOUR NAME].[EXTENSION]
 
 Coding best practice:
 Solutions to problems using an expected "input" should use "input.txt" as the default name for this file
-Solutions to problems should either print to the console the output (that can be later on piped into an output file), or create a file called ""
+Solutions to problems should either print to the console the output (that can be later on piped into an output file), or create a file called "output.txt"
 
 ## Getting Started
 
